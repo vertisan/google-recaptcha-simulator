@@ -1,0 +1,22 @@
+{
+  "name": "google-recaptcha-response",
+  "version": "1.0.0",
+  "description": "Simulates response from Google ReCaptcha service",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "dev": "nodemon --watch './src/**/*.*' --exec 'ts-node' ./src/index.ts"
+  },
+  "main": "index.ts",
+  "author": "Paweł Farys",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "nodemon": "^2.0.4"
+  }
+}

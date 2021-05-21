@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+  app:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+      args:
+        FROM_IMAGE: 14
+    environment:
+      NODE_ENV: development
+    command: ["yarn", "dev"]
+    volumes:
+      - ../app:/var/www
+      - ../docker/docker-entrypoint.sh:/usr/local/bin/docker-entrypoint.sh
+      - /var/www/node_modules
